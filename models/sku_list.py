@@ -80,6 +80,7 @@ def llama2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_7b,
             description="Llama 2 7b model",
             huggingface_repo="meta-llama/Llama-2-7b",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -99,6 +100,7 @@ def llama2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_13b,
             description="Llama 2 13b model",
             huggingface_repo="meta-llama/Llama-2-13b",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 5120,
@@ -118,6 +120,7 @@ def llama2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_70b,
             description="Llama 2 70b model",
             huggingface_repo="meta-llama/Llama-2-70b",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -142,6 +145,7 @@ def llama3_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_8b,
             description="Llama 3 8b model",
             huggingface_repo="meta-llama/Llama-3-8B",
+            ollama_tag="3b-instruct-fp16",
             arch_args={
                 "dim": 4096,
                 "n_layers": 32,
@@ -160,6 +164,7 @@ def llama3_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_70b,
             description="Llama 3 70b model",
             huggingface_repo="meta-llama/Llama-3-70B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -184,6 +189,7 @@ def llama3_1_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_8b,
             description="Llama 3.1 8b model",
             huggingface_repo="meta-llama/Llama-3.1-8B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -203,6 +209,7 @@ def llama3_1_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_70b,
             description="Llama 3.1 70b model",
             huggingface_repo="meta-llama/Llama-3.1-70B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -223,6 +230,7 @@ def llama3_1_base_models() -> List[Model]:
             variant="bf16-mp8",
             description="Llama 3.1 405b model (BF16 weights)",
             huggingface_repo="meta-llama/Llama-3.1-405B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 16384,
@@ -242,6 +250,7 @@ def llama3_1_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_405b,
             description="Llama 3.1 405b model (FP8 quantized)",
             huggingface_repo="meta-llama/Llama-3.1-405B-FP8",
+            ollama_tag="3b-instruct-fp16",
             quantization_format=CheckpointQuantizationFormat.fp8_mixed,
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
@@ -263,6 +272,7 @@ def llama3_1_base_models() -> List[Model]:
             variant="bf16-mp16",
             description="Llama 3.1 405b model (BF16 weights for mp16)",
             huggingface_repo="meta-llama/Llama-3.1-405B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 16384,
@@ -287,6 +297,7 @@ def llama3_2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_1b,
             description="Llama 3.2 1b model",
             huggingface_repo="meta-llama/Llama-3.2-1B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 2048,
@@ -306,6 +317,7 @@ def llama3_2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_3b,
             description="Llama 3.2 3b model",
             huggingface_repo="meta-llama/Llama-3.2-3B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 3072,
@@ -325,6 +337,7 @@ def llama3_2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_11b_vision,
             description="Llama 3.2 11b vision model",
             huggingface_repo="meta-llama/Llama-3.2-11B-Vision",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -347,6 +360,7 @@ def llama3_2_base_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_90b_vision,
             description="Llama 3.2 90b vision model",
             huggingface_repo="meta-llama/Llama-3.2-90B-Vision",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -374,6 +388,7 @@ def llama2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_7b_chat,
             description="Llama 2 7b chat model",
             huggingface_repo="meta-llama/Llama-2-7b-chat",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -393,6 +408,7 @@ def llama2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_13b_chat,
             description="Llama 2 13b chat model",
             huggingface_repo="meta-llama/Llama-2-13b-chat",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 5120,
@@ -412,6 +428,7 @@ def llama2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama2_70b_chat,
             description="Llama 2 70b chat model",
             huggingface_repo="meta-llama/Llama-2-70b-chat",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -436,6 +453,7 @@ def llama3_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_8b_instruct,
             description="Llama 3 8b instruct model",
             huggingface_repo="meta-llama/Llama-3-8B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -455,6 +473,7 @@ def llama3_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_70b_instruct,
             description="Llama 3 70b instruct model",
             huggingface_repo="meta-llama/Llama-3-70B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -479,6 +498,7 @@ def llama3_1_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_8b_instruct,
             description="Llama 3.1 8b instruct model",
             huggingface_repo="meta-llama/Llama-3.1-8B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -498,6 +518,7 @@ def llama3_1_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_70b_instruct,
             description="Llama 3.1 70b instruct model",
             huggingface_repo="meta-llama/Llama-3.1-70B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -518,6 +539,7 @@ def llama3_1_instruct_models() -> List[Model]:
             variant="bf16-mp8",
             description="Llama 3.1 405b instruct model (BF16 weights)",
             huggingface_repo="meta-llama/Llama-3.1-405B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 16384,
@@ -537,6 +559,7 @@ def llama3_1_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_1_405b_instruct,
             description="Llama 3.1 405b instruct model (FP8 quantized)",
             huggingface_repo="meta-llama/Llama-3.1-405B-Instruct-FP8",
+            ollama_tag="3b-instruct-fp16",
             quantization_format=CheckpointQuantizationFormat.fp8_mixed,
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
@@ -558,6 +581,7 @@ def llama3_1_instruct_models() -> List[Model]:
             variant="bf16-mp16",
             description="Llama 3.1 405b instruct model (BF16 weights for mp16)",
             huggingface_repo="meta-llama/Llama-3.1-405B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 16384,
@@ -614,6 +638,7 @@ def llama3_2_quantized_models() -> List[Model]:
             quantization_format=CheckpointQuantizationFormat.int4,
             description="Llama 3.2 1b INT4 quantized LoRA",
             huggingface_repo="meta-llama/Llama-3.2-1B-Instruct-QLORA_INT4_EO8",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 **arch_args_1b(),
@@ -633,6 +658,7 @@ def llama3_2_quantized_models() -> List[Model]:
             quantization_format=CheckpointQuantizationFormat.int4,
             description="Llama 3.2 1b INT4 quantized SpinQuant",
             huggingface_repo="meta-llama/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 **arch_args_1b(),
@@ -648,6 +674,7 @@ def llama3_2_quantized_models() -> List[Model]:
             quantization_format=CheckpointQuantizationFormat.int4,
             description="Llama 3.2 3b INT4 quantized LoRA",
             huggingface_repo="meta-llama/Llama-3.2-3B-Instruct-QLORA_INT4_EO8",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 **arch_args_3b(),
@@ -667,6 +694,7 @@ def llama3_2_quantized_models() -> List[Model]:
             quantization_format=CheckpointQuantizationFormat.int4,
             description="Llama 3.2 3b INT4 quantized SpinQuant",
             huggingface_repo="meta-llama/Llama-3.2-3B-Instruct-SpinQuant_INT4_EO8",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 **arch_args_3b(),
@@ -685,6 +713,7 @@ def llama3_2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_1b_instruct,
             description="Llama 3.2 1b instruct model",
             huggingface_repo="meta-llama/Llama-3.2-1B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args=arch_args_1b(),
             pth_file_count=1,
@@ -693,6 +722,7 @@ def llama3_2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_3b_instruct,
             description="Llama 3.2 3b instruct model",
             huggingface_repo="meta-llama/Llama-3.2-3B-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args=arch_args_3b(),
             pth_file_count=1,
@@ -702,6 +732,7 @@ def llama3_2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_11b_vision_instruct,
             description="Llama 3.2 11b vision instruct model",
             huggingface_repo="meta-llama/Llama-3.2-11B-Vision-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -724,6 +755,7 @@ def llama3_2_instruct_models() -> List[Model]:
             core_model_id=CoreModelId.llama3_2_90b_vision_instruct,
             description="Llama 3.2 90b vision instruct model",
             huggingface_repo="meta-llama/Llama-3.2-90B-Vision-Instruct",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 8192,
@@ -752,6 +784,7 @@ def safety_models() -> List[Model]:
             core_model_id=CoreModelId.llama_guard_3_11b_vision,
             description="Llama Guard v3 11b vision system safety model",
             huggingface_repo="meta-llama/Llama-Guard-3-11B-Vision",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 4096,
@@ -775,6 +808,7 @@ def safety_models() -> List[Model]:
             variant="int4",
             description="Llama Guard v3 1b 'int4' quantized system safety model",
             huggingface_repo="meta-llama/Llama-Guard-3-1B-INT4",
+            ollama_tag="3b-instruct-fp16",
             quantization_format=CheckpointQuantizationFormat.int4,
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
@@ -794,6 +828,7 @@ def safety_models() -> List[Model]:
             core_model_id=CoreModelId.llama_guard_3_1b,
             description="Llama Guard v3 1b system safety model",
             huggingface_repo="meta-llama/Llama-Guard-3-1B",
+            ollama_tag="3b-instruct-fp16",
             recommended_sampling_params=recommended_sampling_params(),
             arch_args={
                 "dim": 2048,
@@ -813,6 +848,7 @@ def safety_models() -> List[Model]:
             core_model_id=CoreModelId.llama_guard_3_8b,
             description="Llama Guard v3 8b system safety model",
             huggingface_repo="meta-llama/Llama-Guard-3-8B",
+            ollama_tag="3b-instruct-fp16",
             arch_args={
                 "dim": 4096,
                 "ffn_dim_multiplier": 1.3,
@@ -832,6 +868,7 @@ def safety_models() -> List[Model]:
             variant="int8",
             description="Llama Guard v3 8b system safety model",
             huggingface_repo="meta-llama/Llama-Guard-3-8B-INT8",
+            ollama_tag="3b-instruct-fp16",
             quantization_format=CheckpointQuantizationFormat.int8,
             arch_args={
                 "dim": 4096,
@@ -851,6 +888,7 @@ def safety_models() -> List[Model]:
             core_model_id=CoreModelId.llama_guard_2_8b,
             description="Llama Guard v2 8b system safety model",
             huggingface_repo="meta-llama/Llama-Guard-2-8B",
+            ollama_tag="3b-instruct-fp16",
             arch_args={
                 "dim": 4096,
                 "n_layers": 32,

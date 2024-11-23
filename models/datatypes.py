@@ -173,6 +173,7 @@ class Model(BaseModel):
     core_model_id: CoreModelId
     description: str
     huggingface_repo: Optional[str] = None
+    ollama_tag: Optional[str] = None
     recommended_sampling_params: Optional[SamplingParams] = None
     arch_args: Dict[str, Any]
     variant: str = ""
